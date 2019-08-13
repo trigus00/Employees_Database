@@ -19,7 +19,7 @@ Data Analysis
 See Data Modeling:Employee Database .png
 
 # Data Engineering 
-'''
+```
 --creating employees table
 
 DROP TABLE IF EXISTS employees;
@@ -31,7 +31,7 @@ CREATE TABLE employees(
 	gender varchar not null,
 	hire_date varchar NOT NULL  
 	);
-'''	
+	
 -- creating department table
 
 DROP TABLE IF EXISTS department;
@@ -40,7 +40,7 @@ CREATE TABLE department (
   dept_name varchar NOT NULL
  
 );
-'''
+
 -- creating dept_emp table
 
 DROP TABLE IF EXISTS dept_emp;
@@ -53,9 +53,9 @@ CREATE TABLE dept_emp (
     to_date  varchar not null 
 	);
 	
-'''
+
 --creating dept_manager
-'''
+
 
 DROP TABLE IF EXISTS dept_manager;
 CREATE TABLE dept_manager (
@@ -67,7 +67,7 @@ CREATE TABLE dept_manager (
     to_date  varchar  not null 
 	);
 
-'''
+
 --creating salaries table
 
 DROP TABLE IF EXISTS salaries;
@@ -78,7 +78,7 @@ CREATE TABLE salaries (
     from_date varchar NOT NULL,
     to_date  varchar not null 
 );
-'''
+
 --creating titles table 
 '''
 DROP TABLE IF EXISTS titles;
@@ -89,8 +89,7 @@ CREATE TABLE titles (
     from_date varchar NOT NULL,
     to_date  varchar not null 
 );
-'''
-
+```
 
 # Data Analysis 
 
