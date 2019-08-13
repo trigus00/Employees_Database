@@ -92,6 +92,7 @@ CREATE TABLE titles (
 ```
 
 # Data Analysis 
+```
 
 -- 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
@@ -159,9 +160,9 @@ select last_name, count(*) as frequency
 from employees 
 group by last_name
 order by frequency desc;
-
+```
 # Bonus 
-
+```
 # Dependencies and Setup
 # SQL Alchemy
 from sqlalchemy import create_engine
@@ -257,4 +258,4 @@ plt.title("Average Employee Salary by Title")
 # Show plot
 plt.show()
 
- 
+ ```
