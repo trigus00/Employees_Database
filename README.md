@@ -19,7 +19,7 @@ Data Analysis
 See Data Modeling:Employee Database .png
 
 # Data Engineering 
-
+'''
 --creating employees table
 
 DROP TABLE IF EXISTS employees;
@@ -31,7 +31,7 @@ CREATE TABLE employees(
 	gender varchar not null,
 	hire_date varchar NOT NULL  
 	);
-	
+'''	
 -- creating department table
 
 DROP TABLE IF EXISTS department;
@@ -40,6 +40,7 @@ CREATE TABLE department (
   dept_name varchar NOT NULL
  
 );
+'''
 -- creating dept_emp table
 
 DROP TABLE IF EXISTS dept_emp;
@@ -51,7 +52,10 @@ CREATE TABLE dept_emp (
 	from_date varchar NOT NULL,
     to_date  varchar not null 
 	);
+	
+'''
 --creating dept_manager
+'''
 
 DROP TABLE IF EXISTS dept_manager;
 CREATE TABLE dept_manager (
@@ -63,6 +67,7 @@ CREATE TABLE dept_manager (
     to_date  varchar  not null 
 	);
 
+'''
 --creating salaries table
 
 DROP TABLE IF EXISTS salaries;
@@ -73,8 +78,9 @@ CREATE TABLE salaries (
     from_date varchar NOT NULL,
     to_date  varchar not null 
 );
+'''
 --creating titles table 
-
+'''
 DROP TABLE IF EXISTS titles;
 CREATE TABLE titles (
  	emp_id int   NOT NULL,
@@ -83,18 +89,20 @@ CREATE TABLE titles (
     from_date varchar NOT NULL,
     to_date  varchar not null 
 );
-
+'''
 
 
 # Data Analysis 
 
 -- 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
+
 SELECT e.emp_id, e.last_name, e.first_name, e.gender, s.salary
 FROM salaries AS s
 INNER JOIN employees AS e ON
 e.emp_id = s.emp_id;
 
 -- 2. List employees who were hired in 1986.
+
 
 SELECT * FROM employees
 WHERE hire_date LIKE '1986%';
@@ -110,6 +118,7 @@ JOIN employees as e on
 e.emp_id = m.emp_id;
 
 --4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+
 SELECT e.emp_id, e.first_name, e.last_name,dp.dept_name
 from employees as e
 inner join dept_emp as d on
@@ -118,6 +127,7 @@ inner join department as dp on
 dp.dept_no = d.dept_no;  
 
 -- 5. List all employees whose first name is "Hercules" and last names begin with "B."
+
 SELECT * FROM employees
 WHERE first_name LIKE 'Hercules'
 AND last_name LIKE 'B%';
