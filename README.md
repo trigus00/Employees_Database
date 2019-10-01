@@ -27,7 +27,7 @@ Design the tables to hold data in the CSVs, import the CSVs into a SQL database,
 
 ## Contact
 Gustavo Mendoza 
-*Email:trigus00@gmail.com
-*Github: github.com/trigus00
-*LinkedIn: https://www.linkedin.com/in/gustavo-mendoza-36a93b119/
+* Email:trigus00@gmail.com
+* Github: github.com/trigus00
+* LinkedIn: https://www.linkedin.com/in/gustavo-mendoza-36a93b119/
 
