@@ -21,13 +21,13 @@ Design the tables to hold data in the CSVs, import the CSVs into a SQL database,
 
 ## Needs of this project
 - frontend developers
-- data exploration/descriptive statistics
+- data exploration
 - data processing/cleaning
 - writeup/reporting
 
 ## Contact
 Gustavo Mendoza 
-Email:trigus00@gmail.com
-Github: github.com/trigus00
-LinkedIn: https://www.linkedin.com/in/gustavo-mendoza-36a93b119/
+*Email:trigus00@gmail.com
+*Github: github.com/trigus00
+*LinkedIn: https://www.linkedin.com/in/gustavo-mendoza-36a93b119/
 
